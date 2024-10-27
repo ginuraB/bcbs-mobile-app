@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'screen3.dart';  // Add this import
 
-class Screen2 extends StatelessWidget {
-  const Screen2({super.key});
+class Screen3 extends StatelessWidget {
+  const Screen3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,12 +29,12 @@ class Screen2 extends StatelessWidget {
                 ),
               ),
               Image.asset(
-                'assets/badminton-player.png', // Make sure this path is correct
+                'assets/booking-icon.png', // Make sure to add this image to your assets
                 height: 250,
               ),
               const SizedBox(height: 20),
               const Text(
-                'Explore Courts',
+                'Easy Booking',
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
@@ -43,7 +42,7 @@ class Screen2 extends StatelessWidget {
               ),
               const SizedBox(height: 16),
               const Text(
-                'Find a variety of high-quality badminton courts around you. Check out court details, facilities, reviews, and more.',
+                'Book a court easily through our app. Specially the date time duration according to your preferences.',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 16, color: Color.fromARGB(255, 0, 0, 0)),
               ),
@@ -53,10 +52,7 @@ class Screen2 extends StatelessWidget {
                 height: 56,
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const Screen3()),
-                    );
+                    // Define what happens on "Next" button press
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF1B7340),
