@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screen4.dart';  // Add this import at the top
 
 class Screen3 extends StatelessWidget {
   const Screen3({super.key});
@@ -29,7 +30,7 @@ class Screen3 extends StatelessWidget {
                 ),
               ),
               Image.asset(
-                'assets/booking-icon.png', // Make sure to add this image to your assets
+                'assets/booking-icon.png',
                 height: 250,
               ),
               const SizedBox(height: 20),
@@ -52,7 +53,10 @@ class Screen3 extends StatelessWidget {
                 height: 56,
                 child: ElevatedButton(
                   onPressed: () {
-                    // Define what happens on "Next" button press
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Screen4()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF1B7340),
